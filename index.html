@@ -42,7 +42,7 @@
 
 <body class="sora-font">
   <header>
-    <div class="navbar bg-primary-color lg:px-36 px-2 py-5">
+    <div class="navbar bg-primary-color lg:px-36 px-2 py-5 mb-10">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -51,10 +51,12 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] bg-primary-color mt-3 w-52 p-2 shadow ">
             <li><a class="md:text-xl text-word-primary">Find a pet</a></li>
             <li><a class="md:text-xl text-word-primary">Breeds</a></li>
             <li><a class="md:text-xl text-word-primary">Contact Us</a></li>
+            <li><a><i class="fa-solid fa-bell md:text-2xl"></i></a></li>
+            <li><a><i class="fa-solid fa-magnifying-glass md:text-2xl"></i></a></li>
           </ul>
         </div>
         <a class="flex justify-center items-center md:text-2xl text-text-primary">
@@ -67,11 +69,11 @@
           <li><a class="md:text-xl text-word-primary">Find a pet</a></li>
           <li><a class="md:text-xl text-word-primary">Breeds</a></li>
           <li><a class="md:text-xl text-word-primary">Contact Us</a></li>
+          <li><a><i class="fa-solid fa-bell md:text-2xl"></i></a></li>
+          <li><a><i class="fa-solid fa-magnifying-glass md:text-2xl"></i></a></li>
         </ul>
       </div>
       <div class="navbar-end gap-3">
-        <i class="fa-solid fa-bell md:text-2xl"></i>
-        <i class="fa-solid fa-magnifying-glass md:text-2xl"></i>
         <a class="btn lg:w-28 bg-transparent border-btn-color">Login</a>
         <a class="btn lg:w-36 bg-btn-color text-black">Register</a>
       </div>
@@ -79,14 +81,15 @@
   </header>
   <main>
     <!-- banner section -->
-    <section class="md:mx-32 my-20 relative">
+    <section class="md:mx-32 my-20 relative z-0">
       <div>
         <img class="pt-16" src="c1-assets/cat-big.png" alt="">
 
       </div>
       <div class="md:w-[680px] absolute -top-20 md:top-10 space-y-3">
-        <h3 class="md:text-6xl text-4xl text-word-primary ">Pamper Your Pet, Because They Deserve the Bes</h3>
-        <p class="text-xl text-word-color">Discover a world of treats, toys, and essentials handpicked for your furry
+        <h3 class="md:text-6xl text-2xl text-word-primary ">Pamper Your Pet, Because They Deserve the Bes</h3>
+        <p class="md:text-xl text-sm text-word-color">Discover a world of treats, toys, and essentials handpicked for
+          your furry
           friends. Shop now and make tails wag with joy!</p>
         <button class="btn bg-btn-color text-word-color md:w-40">Find a Pet</button>
       </div>
@@ -149,16 +152,16 @@
     <!-- Trending Pet Products section -->
     <section class="md:p-36 my-20 bg-primary-color">
       <h3 class="text-4xl text-word-primary mb-10">Trending Pet Products</h3>
-      <div class="flex items-center justify-between gap-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="bg-[#F9DF8A] w-[425px] p-10 rounded-2xl space-y-3 h-[460px] relative">
           <h3 class="text-3xl text-word-primary">T-Shirt for Dogs</h3>
           <p>Discover a world of treats, toys and essentials handpicked for</p>
           <button class="btn">Shop Now</button>
-          <div class="absolute top-40 left-52">
+          <div class="absolute md:top-40 top-20 left-52">
             <img src="c1-assets/cute-pet-small.png" alt="">
           </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
           <!-- first card -->
           <div class="w-[210px] py-5 p-2 flex items-center gap-5 bg-white rounded-xl">
             <div class="bg-primary-color p-5 rounded-xl">
@@ -265,10 +268,9 @@
     <!-- Everyday low Price section -->
     <section class="md:mx-36 my-20">
       <h3 class="text-4xl text-word-primary mb-10">Everyday low Price</h3>
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
-
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-10 mx-5">
         <div
-          class="col-span-3 w-[600px] flex justify-around items-center gap-5 p-10 bg-gradient-to-tl from-[#F8CCFB] to-[#ACD2FD] rounded-xl">
+          class="md:col-span-3 md:w-[600px] flex justify-around items-center p-10 bg-gradient-to-tl from-[#F8CCFB] to-[#ACD2FD] rounded-xl">
           <div class="flex-1 space-y-5">
             <p class="text-xl text-[#000000]">Under Price</p>
             <h3 class="text-3xl text-[#000000]">Pet Grooming Mitt</h3>
@@ -279,40 +281,44 @@
             <img src="c1-assets/cute-dog-mid.png" alt="">
           </div>
         </div>
-        <div class="col-span-2 bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] px-10 pt-5 rounded-xl relative">
+        <div
+          class="md:col-span-2 h-[400px] bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] px-10 pt-5 rounded-xl relative">
           <div class="space-y-3">
             <h3 class="text-3xl text-[#000000]">T-Shirt for Dogs</h3>
             <h2 class="text-btn-color lg:text-6xl text-4xl">$7.99</h2>
           </div>
-          <img class="absolute top-0 left-44" src="c1-assets/cute-pet-small.png" alt="">
+          <img class="absolute top-0 md:left-44 left-36" src="c1-assets/cute-pet-small.png" alt="">
 
         </div>
       </div>
-
     </section>
     <!-- Get Pawsome News! section -->
-    <section class="md:mx-32 mt-20 -mb-36 z-20">
-      <div class="bg-primary-color px-20 py-10 flex justify-between items-center gap-10 rounded-xl">
+    <section class="relative md:mx-32 mx-5 mt-20 -mb-28">
+      <div
+        class="bg-primary-color md:px-20 py-10 flex flex-col md:flex-row[] justify-between items-center gap-10 rounded-xl shadow-lg relative z-10">
         <div>
           <img src="c1-assets/cute-pet-mid.png" alt="">
         </div>
-        <div class="space-y-5">
+        <div class="space-y-5 px-5 flex flex-col justify-center items-center">
           <h4 class="text-4xl text-word-color">Get Pawsome News!</h4>
-          <p class="text-xl text-word-color">Exclusive training tips, ticks, product deals and more.</p>
-          <input class="input w-[475px]" type="email" placeholder="Enter Email...">
-          <button class="btn bg-btn-color text-black w-40">Subscribe</button>
+          <p class="text-xl text-word-color">Exclusive training tips, tricks, product deals and more.</p>
+          <input class="input md:w-[475px] w-[320px]" type="email" placeholder="Enter Email..."> <br>
+          <button class="btn bg-btn-color text-black w-40 ">Subscribe</button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer bg-[#FFDC2680] pt-80 px-10 pb-10">
+
+  <!-- Footer -->
+  <footer class="footer bg-[#FFDC2680] pt-40 px-10 pb-10 relative z-0">
     <nav>
       <p class="flex justify-center gap-2 items-center text-2xl text-word-color">
         <img src="c1-assets/logo-footer.png" alt="">
         <span>Browse<span class="text-btn-color">4</span>Pets</span>
       </p>
-      <p class="text-xl text-[#111111B3] md:w-[430px]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+      <p class="text-xl text-[#111111B3] md:w-[430px]">Discover a world of treats, toys, and essentials handpicked for
+        your furry friends</p>
     </nav>
     <nav>
       <h6 class="text-xl text-word-color">Find a Pet</h6>
@@ -329,6 +335,7 @@
       </div>
     </nav>
   </footer>
+
 </body>
 
 </html>
